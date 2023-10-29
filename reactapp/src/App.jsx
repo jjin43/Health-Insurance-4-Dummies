@@ -5,14 +5,16 @@ function App() {
 
   return (
     <>
-      <div>
-
-      </div>
+      <head>
+        <title></title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="./buttonDisabler.js"></script>
+      </head>
       <h1>Health Insurance Predictor</h1>
       <div className="card">
         <form action="http://localhost:5000/submit" method='POST' id='form1'>
           <label htmlFor='age'>Age:</label>
-          <input type='number' name='age' id='age'/>
+          <input type='number' name='age' id='age' />
 
           <label htmlFor='sex'>Sex:</label>
           <select name="sex" id='sex' >
@@ -21,7 +23,7 @@ function App() {
           </select>
 
           <label htmlFor='bmi'>BMI:</label>
-          <input type='number' name='bmi' id='bmi'/>
+          <input type='number' name='bmi' id='bmi' />
 
           <label htmlFor='children'>Number of Children:</label>
           <input type='number' name='children' id='children'/>
@@ -40,7 +42,7 @@ function App() {
             <option value ="4"> southeast </option>
           </select>
           <div>
-            <input type='submit' value="Calculate" form='form1'/>
+            <input type='submit' id='calcButton' value="Calculate" form='form1'/>
           </div>
         </form>
       

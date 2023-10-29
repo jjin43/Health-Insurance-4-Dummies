@@ -26,30 +26,36 @@ def submit():
         predict = interSys.acessDB(age, sex, bmi, children, smoker, region)
         #print(predict)
 
-        if(sex==1):
+        if(sex=='1'):
             sex = "male"
-        elif(sex==0):
+        elif(sex=='0'):
             sex = "female"
         
-        if(smoker==1):
-            smoker = "is a smoker"
-        elif(smoker==0):
-            smoker = "doesn't smoke"
+        if(smoker=='1'):
+            smoker = "Yes"
+        elif(smoker=='0'):
+            smoker = "No"
 
-        if(region==1):
+        if(region=='1'):
             region = "northwest"
-        elif(region==2):
+        elif(region=='2'):
             region = "northeast"
-        elif(region==3):
+        elif(region=='3'):
             region = "southwest"
-        elif(region==4):
+        elif(region=='4'):
             region = "southeast"
         # pass arr to Generative AI
         predict = round(float(predict[0]),2)
         predict = str(predict)
         aiResponse = togetherAI.chat(predict, age, sex, bmi, children, smoker, region)  
-        #print(aiResponse)
-    else: return "Error in passing data"      
+
+        # aiResponse = '<p>' + aiResponse
+        # for i in range(0,len(aiResponse)-3):
+        #     if aiResponse[i].isdigit() and aiResponse[i+1] == '.':
+        #         aiResponse[:i-1] + '</p> <p>' + aiResponse[i-1:]
+        # aiResponse = aiResponse +'.' + '</p>'
+
+    else: return "All Data Must be Provided."      
     # Send data to Reacts
     return render_template('results.html',predict=predict,age=age,sex=sex,bmi=bmi,children=children,smoker=smoker,region=region,aiResponse=aiResponse)
 
