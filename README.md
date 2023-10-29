@@ -1,4 +1,4 @@
-Health Insurance 4 Dummies 🏥
+Health Insurance 4 Dummies 
 
 Inspiration 💡
 
@@ -14,19 +14,23 @@ Front-end: React (Convex)
 Back-end: Flask (Python)
 Machine Learning: H2O (InterSystems)
 Others: Together.AI, SQL, JavaScript
+
+
 How It Works 👷
 
 Frontend
 App.jsx: Main React component that renders the UI.
 main.jsx: Entry point for the React application.
+
+
 Backend
 flaskapp.py: Main Flask application file for handling HTTP requests.
 interSys.py: Handles database interactions with IRIS database.
 togetherAI.py: Uses the Together API to generate AI-based responses.
+
+
 Installation and Setup 🚀
 
-bash
-Copy code
 # Clone the repository
 git clone https://github.com/your_username/HealthInsurance4Dummies.git
 
@@ -46,6 +50,8 @@ npm start
 
 # Backend
 python flaskapp.py
+
+
 Challenges 🧩
 
 Full-stack development complexities.
@@ -55,6 +61,8 @@ Future Improvements 🌈
 
 Gather larger datasets for more accurate predictions.
 Improve user interface based on feedback.
+
+
 Contributions 👥
 
 Feel free to contribute to this project. All contributions are welcome!
