@@ -8,6 +8,8 @@ Features 🌟
 
 Estimate Insurance Costs: ML-powered estimates for annual health insurance costs.
 Cost Breakdown: Detailed explanation of costs using Local Model-agnostic Models (LMM).
+
+
 Tech Stack 🛠
 
 Front-end: React (Convex)
@@ -32,7 +34,7 @@ togetherAI.py: Uses the Together API to generate AI-based responses.
 Installation and Setup 🚀
 
 # Clone the repository
-git clone https://github.com/your_username/HealthInsurance4Dummies.git
+git clone 
 
 # Navigate to project directory
 cd HealthInsurance4Dummies
@@ -57,16 +59,9 @@ Challenges 🧩
 Full-stack development complexities.
 Finding quality datasets for model training.
 TLS authentication for accessing the trained model.
+
+
 Future Improvements 🌈
 
 Gather larger datasets for more accurate predictions.
 Improve user interface based on feedback.
-
-
-Contributions 👥
-
-Feel free to contribute to this project. All contributions are welcome!
-
-License 📜
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
