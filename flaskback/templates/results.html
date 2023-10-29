@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="flaskback\static\styles\results.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}">
 </head>
 <body>
-
-<div>
-    <h1 >Health Insurance Predictor</h1>
-    <h3>Your Predicted Health Insurance Yearly Cost is: {{predict}}</h2>
-    <div className="card">
+    <div class="bg-container">
+    <h1>Health Insurance Predictor</h1>
+    <img src="c:\Users\Jin\Downloads\doodlepngmedical.png" alt='doodleBackground' class='background'></img>
+    <h3>Your Predicted Health Insurance Yearly Cost is: &nbsp </h3>
+    <h2> {{predict}}</h2>
+    </div>
+<div class="test">
+    <div class="card">
         <h3>Profile:</h3>
         <body>
             <br>Age: {{age}}</br>
@@ -19,8 +22,10 @@
             <br>US region: {{region}}</br>
         </body>
     </div>
-    <h4>HealthBot's Tips:<h4>
+    <div class="card">
+    <h3>HealthBot's Tips:<h3>
         <body> {{aiResponse}}</body>
+    </div>
 
 </div>
 </body>
