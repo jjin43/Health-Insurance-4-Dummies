@@ -1,9 +1,4 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: left;
-}
+
 
 .logo {
   height: 6em;
@@ -33,10 +28,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
 }
@@ -45,14 +36,44 @@ label, input{
   display: block;
 }
 
-input, select {
-  margin-bottom: 10px;
-}
-
-div {
-  margin-top: 5px;
-}
-
 select {
   width: 200px;
+}
+
+/* Existing styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+/* Additional styles for better UI */
+.card {
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+input, select {
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
