@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/results.css') }}">
+    <link rel="stylesheet" type="text/css" href="flaskback\static\styles\results.css">
 </head>
 <body>
 
 <div>
-    <h1>Health Insurance Predictor</h1>
-    <h2>Your Predicted Health Insurance Yearly Cost is: {{predict}}</h2>
-    <h3>Profile:</h3>
-    <h4>Age: {{age}}</h3>
-    <h4>Sex: {{sex}}</h3>
-    <h4>BMI: {{bmi}}</h3>
-    <h4># of Children: {{children}}</h3>
-    <h4>Smoker: {{smoker}}</h3>
-    <h4>US region: {{region}}</h3>
+    <h1 >Health Insurance Predictor</h1>
+    <h3>Your Predicted Health Insurance Yearly Cost is: {{predict}}</h2>
+    <div className="card">
+        <h3>Profile:</h3>
+        <body>
+            <br>Age: {{age}}</br>
+            <br>Sex: {{sex}}</br>
+            <br>BMI: {{bmi}}</br>
+            <br># of Children: {{children}}</br>
+            <br>Smoker: {{smoker}}</br>
+            <br>US region: {{region}}</br>
+        </body>
+    </div>
     <h4>HealthBot's Tips:<h4>
         <body> {{aiResponse}}</body>
 

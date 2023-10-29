@@ -1,3 +1,5 @@
-body {
-    background-color: burlywood;
+.title{
+    align-self:center;
+    font-family: cursive;
+    font-size: large;
 }
