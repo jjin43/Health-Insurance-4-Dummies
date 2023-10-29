@@ -1,5 +1,5 @@
 # Hleath-Insurance-4-Dummies
-Team - Pavoit's Minions
+CalHack 2023 - Table 46
 
 ## Descrpitions:
 Choosing the right health insurance is a major concern, especially for young adults. Health Insurance 4 Dummies aims to simplify this complex decision-making process by providing a fair estimate for annual health insurance costs based on user inputs, and using an AI language model to justify the cost.
