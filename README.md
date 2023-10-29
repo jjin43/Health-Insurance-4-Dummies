@@ -1,5 +1,5 @@
 # CalHack2023
-Pavoit's Minions
+Team - Pavoit's Minions
 
 ## Commands
 in the /flaskapp directory: run `python flaskapp.py`
