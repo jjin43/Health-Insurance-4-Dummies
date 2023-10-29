@@ -17,12 +17,12 @@ def chat(predict, age, sex, bmi, children, smoker, region):
         max_tokens = 400,
         temperature = 0.1,
         top_k = 40,
-        top_p = 0.85,
+        top_p = 0.90,
         repetition_penalty = 1.1,
-        stop = ["7", '[INST]', '</s>']
+        stop = ["7.", '[INST]', '</s>']
     )
 
     response = str(output['output']['choices'][0]['text'])
-    if response.strip().endswith("7"):
-        response = response.strip()[:-1]
+    if response.strip().endswith("7."):
+        response = response.strip()[:-2]
     return response
