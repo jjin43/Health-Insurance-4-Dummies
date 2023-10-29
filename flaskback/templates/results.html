@@ -4,12 +4,12 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}">
 </head>
 <body>
-    <div class="bg-container">
-    <h1>Health Insurance Predictor</h1>
-    <img src="c:\Users\Jin\Downloads\doodlepngmedical.png" alt='doodleBackground' class='background'></img>
-    <h3>Your Predicted Health Insurance Yearly Cost is: &nbsp </h3>
-    <h2> {{predict}}</h2>
-    </div>
+    
+    <h1 className="Title">Health Insurance Cost Predicton</h1>
+    
+    <h2 class="card">Your Predicted Health Insurance Annual Cost is:&nbsp&nbsp{{predict}} </h2> 
+        <!-- <h2> </h2> -->
+
 <div class="test">
     <div class="card">
         <h3>Profile:</h3>
@@ -23,7 +23,7 @@
         </body>
     </div>
     <div class="card">
-    <h3>HealthBot's Tips:<h3>
+    <h3>InsuranceBot's Explaination:<h3>
         <body> {{aiResponse}}</body>
     </div>
 
