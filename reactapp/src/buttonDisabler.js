@@ -1,6 +1,5 @@
-$('#age, #sex, #bmi, #children, #smoke, #region').bind('keyup', function() {
-    if(allFilled()) {$('#calcButton').removeAttr('disabled')}
-    else{$('#calcButton').prop("disabled", true);}
+$('#ageX, #sexX, #bmiX, #childrenX, #smokerX, #regionX').bind('keyup', function() {
+    if(allFilled()) $('#calcButton').removeAttr('disabled')
 });
 
 function allFilled() {
