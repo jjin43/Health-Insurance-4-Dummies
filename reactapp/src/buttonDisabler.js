@@ -1,12 +1,18 @@
-$('#age, #sex, #bmi, #children, #smoke, #region').bind('keyup', function() {
-    if(allFilled()) {$('#calcButton').removeAttr('disabled')}
-    else{$('#calcButton').prop("disabled", true);}
-});
+// Enable or Disable Calculation Button Based on Input Fields
+$(document).ready(function() {
 
-function allFilled() {
-    var filled = true;
-    $('body input').each(function() {
-        if($(this).val() == '') filled = false;
-    });
-    return filled;
-}
+  // Input field selectors for easy management
+  const inputFields = '#age, #sex, #bmi, #children, #smoke, #region';
+
+  // Attach 'keyup' event listener to each specified input field
+  $(inputFields).on('keyup', function() {
+    // Enable or disable the calculation button
+    $('#calcButton').prop('disabled', !areAllFieldsFilled());
+  });
+
+  // Function to check if all input fields are filled
+  function allFilled()() {
+    return $(inputFields).toArray().every(input => $(input).val() !== '');
+  }
+  
+});
