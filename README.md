@@ -2,11 +2,11 @@
 Team - Pavoit's Minions
 
 ## Commands
-in the /flaskapp directory: run `python flaskapp.py`
-\nin the /reactapp directory: run `npm run dev`
-\nwebpage url: `http://localhost:5173/`
+*in the /flaskapp directory: run `python flaskapp.py`
+*in the /reactapp directory: run `npm run dev`
+*webpage url: `http://localhost:5173/`
 
 ## CalHack Services Used
-FrontEnd: Convex-React-Vite
-\nML Model: InterSystems-ML_Integration
-\nAI Response: TogetherAI
+*FrontEnd: Convex-React-Vite
+*ML Model: InterSystems-ML_Integration
+*AI Response: TogetherAI
