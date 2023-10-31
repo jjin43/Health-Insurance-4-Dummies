@@ -5,11 +5,11 @@ import ssl
 def acessDB(age, sex, bmi, children, smoker, region):
     sslcontext = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH, cafile="./data/certificateSQLaaS.pem")
 
-    connection_str = "k8s-5d4d2570-ac3b7b37-2679e1cec3-b1751f8c2e7cd8ef.elb.us-east-1.amazonaws.com"
+    connection_str = "..."
     port = 443
     namespace = "USER"
     username = "SQLAdmin"
-    password = "JJin413007!"
+    password = "..."
     arr = []
 
     connection = iris.connect(connection_str, port, namespace, username, password, sslcontext=sslcontext)
