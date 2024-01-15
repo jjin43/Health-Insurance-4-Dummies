@@ -1,8 +1,8 @@
 # Hleath-Insurance-4-Dummies
 CalHack 10.0 2023 - Table 46 
-`[InterSystems Challenge: 2nd Place`]
+`[InterSystems Challenge: 2nd Place]`
 ## DevPost Link: 
-\thttps://devpost.com/software/health-insurance-for-dummys
+https://devpost.com/software/health-insurance-for-dummys
 ## Video Demo: 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ie89gtE65rY?si=BcTGrK8z88UX1EDD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
